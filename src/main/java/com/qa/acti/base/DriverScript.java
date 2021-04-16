@@ -47,6 +47,10 @@ public class DriverScript
 			driver = new FirefoxDriver();
 		
 	}
+		else
+		{
+			System.out.println("Browser name not specified correctly.Please provide proper browser name");
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
